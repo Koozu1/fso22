@@ -1,0 +1,20 @@
+selain->palvelin: HTTP GET  https://studies.cs.helsinki.fi/exampleapp/spa
+palvelin-->selain: HTML Koodi
+selain->palvelin: HTTP GET  https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: CSS Koodi
+selain->palvelin: HTTP GET  https://studies.cs.helsinki.fi/exampleapp/spa.js
+palvelin-->selain: JS Koodi
+
+note over selain:
+selain suorittaa js ja hakee datan ja ikonin palvelimelta
+end note
+
+selain->palvelin: HTTP GET  https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: Json data
+selain->palvelin: https://studies.cs.helsinki.fi/favicon.ico
+palvelin-->selain: kuva
+
+
+note over selain:
+selain renderöi sivun.
+end note
